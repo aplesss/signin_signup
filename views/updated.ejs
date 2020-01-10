@@ -1,0 +1,19 @@
+<h1 class="mt-4">Updated</h1>
+<p class="lead mb-3">Update <%= user.name %></p>
+<% include ./partials/message %>
+<form action="/user/updated"  method="POST">
+    <div class="form-group">
+
+    <p name="email">Account: <%= user.email %></p>
+    </div>
+    <div class="form-group">
+    <p>What type of user ?</p>
+    <select name="Rule">
+    <option value ="client">client</option> 
+    <option value ="admin">admin</option>
+    </select> 
+    </div>
+<button type="submit" class="btn btn-primary ">Submit</button>
+    </form>
+<br/>
+ 
